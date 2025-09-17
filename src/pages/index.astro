@@ -12,19 +12,24 @@ import GridCard from "../components/GridCard.astro";
 		<title>Astro</title>
 	</head>
 	<body class="mx-auto max-w-4xl container p-4">
-		<main class="flex flex-col items-start justify-center min-h-screen p-4">
-			<h2>Hola👋🏼, soy Jose Ivan</h2>
+		<main class="flex items-center justify-center min-h-screen pr-12">
+			<div class="flex flex-col justify-center h-full max-w-lg">
+			<h2 class="text-2xl font-extrabold mt-4 mb-4 mr-4 text-start">Hola👋🏼, soy Jose Ivan</h2>
 			<h1
-				class="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4"
+				class="font-extrabold text-4xl md:text-5xl lg:text-7xl mb-4"
 			>
 				<span class="text-primary">SOFTWARE</span>
 				<br />
 				<span class="text-secondary">DEVELOPER</span>
 			</h1>
-			<p class="text-sm font-medium md:text-base mb-6 max-w-1/2">
-				Desarrollador de software especializado en crear sitios web
-				ultrarrápidos y optimizados para el contenido con Astro.
+			<p class="text-sm font-medium md:text-base mb-6 max-w-full">
+				Desarrollador de software con experiencia en la construcción de soluciones
+				 eficientes y optimizadas, con un enfoque en el rendimiento.
 			</p>
+			</div>
+			<div class="rounded-full overflow-hidden w-96 justify-center items-center hidden md:flex">
+				<img src="/images/foto-perfil.png" alt="Foto de perfil">
+			</div>
 		</main>
 		<section class="w-full h-full my-4">
 			<h2 class="text-2xl font-extrabold mt-4 mb-6 mr-4 text-end">
@@ -38,49 +43,54 @@ import GridCard from "../components/GridCard.astro";
 					<!-- El Colegio Invisible - Grande (2x2) -->
 					<div class="col-span-2 row-span-2 animate-slide-in-left animate-duration-slower view-animate-[--subjectReveal] ">
 						<GridCard
-							rutaImagen="/images/iconos/el-colegio-invisible-logo.jpg"
+							rutaImagen="/images/iconos/elcolegioinvisible.png"
 							nombreProyecto="El Colegio Invisible"
-							descripcion="Lege et vince"
+							descripcion="Aplicacion web para gestionar inventarios de libros en una librería."
 							className="bg-gray-100"
+							isLarge={true}
 						/>
 					</div>
 
-					<!-- Marketpick - Pequeño (1x1) -->
+					<!-- Landing - Pequeño (1x1) -->
 					<div class="col-span-1 row-span-1">
+						
+						
 						<GridCard
-							rutaImagen="/images/iconos/logomarketpick.png"
-							nombreProyecto="Marketpick"
+							rutaImagen="/images/iconos/logoagroscan.png"
+							nombreProyecto="Deteccion de Plagas"
 						/>
 					</div>
 
-					<!-- Balanza - Pequeño (1x1) -->
+					<!-- Abogados - Pequeño (1x1) -->
 					<div class="col-span-1 row-span-1 animate-slide-in-right">
 						<GridCard
 							rutaImagen="/images/iconos/logoappabogados.png "
-							nombreProyecto="Justicia"
+							nombreProyecto="Web Scrapping de Consultas Juridicas"
 						/>
 					</div>
 
-					<!-- Árbol - Mediano (2x1) -->
+					<!-- AgroScan - Mediano (2x1) -->
 					<div class="col-span-2 row-span-1 col-start-3 row-start-2 ">
 						<GridCard
-							rutaImagen="/images/iconos/logoagroscan.png"
-							nombreProyecto="Crecimiento"
+							rutaImagen="/images/iconos/simulacionapp.png"
+							nombreProyecto="Generacion de Numeros Pseudoaleatorios"
 						/>
 					</div>
+
+					<!-- Marketpick - Pequeño (1x3) -->
 					<div class="col-span-3 row-span-1 col-start-1 row-start-3">
+						
 						<GridCard
-							rutaImagen="/images/iconos/"
-							nombreProyecto="Tecnología"
+							rutaImagen="/images/iconos/logomarketpick.png"
+							nombreProyecto="Marketpick e-commerce"
 						/>
-
 					</div>
 
-					<!-- Mundo - Pequeño (1x1) -->
+					<!-- Simulacion - Pequeño (1x1) -->
 					<div class="col-span-1 row-span-1 col-start-4 row-start-3 ">
 						<GridCard
-							rutaImagen="/images/iconos/simulacionapp.png"
-							nombreProyecto="Global"
+							rutaImagen="/images/iconos/BMlogo.png"
+							nombreProyecto="Landing Page"
 						/>
 					</div>
 				</div>
@@ -91,7 +101,14 @@ import GridCard from "../components/GridCard.astro";
 			<section class="w-full my-4">
 				<h2 class="text-2xl font-extrabold mt-16 mb-6 ml-4">
 					<span class="border-b-primary border-b-4">Sobre Mí</span>
+					
 				</h2>
+				<p class="text-sm font-medium md:text-base ml-4 mb-6 max-w-full">
+				Soy un apasionado del desarrollo web y siempre estoy buscando aprender
+				nuevas tecnologías y mejorar mis habilidades. Me encanta crear
+				sitios web que no solo sean visualmente atractivos, sino también
+				ultrarrápidos y optimizados. 
+			</p>
 			</section>
 		</section>
 	</body>
