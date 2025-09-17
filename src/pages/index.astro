@@ -12,7 +12,7 @@ import GridCard from "../components/GridCard.astro";
 		<title>Astro</title>
 	</head>
 	<body class="mx-auto max-w-4xl container p-4">
-		<main class="flex items-center justify-center min-h-screen pr-12">
+		<main class="flex items-center justify-center min-h-screen pr-12 view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_10%_contain_25%]">
 			<div class="flex flex-col justify-center h-full max-w-lg">
 			<h2 class="text-2xl font-extrabold mt-4 mb-4 mr-4 text-start">Hola👋🏼, soy Jose Ivan</h2>
 			<h1
@@ -36,7 +36,7 @@ import GridCard from "../components/GridCard.astro";
 				<span class="border-b-primary border-b-4">Proyectos</span>
 			</h2>
 
-			<div class="max-w-6xl mx-auto">
+			<div class="max-w-6xl mx-auto view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_10%_contain_25%]">
 				<div
 					class="grid grid-cols-4 grid-rows-4 gap-4 h-[600px] md:h-[700px] "
 				>
@@ -98,7 +98,7 @@ import GridCard from "../components/GridCard.astro";
 
 			
 
-			<section class="w-full my-4">
+			<section class="w-full my-4 view-animate-[--subjectReveal] animate-zoom-in animate-range-[0%_contain_5%]">
 				<h2 class="text-2xl font-extrabold mt-16 mb-6 ml-4">
 					<span class="border-b-primary border-b-4">Sobre Mí</span>
 					
@@ -110,6 +110,15 @@ import GridCard from "../components/GridCard.astro";
 				ultrarrápidos y optimizados. 
 			</p>
 			</section>
+			<section class="w-full my-4 view-animate-[--subjectReveal] animate-zoom-in animate-range-[0%_contain_5%]">
+				<h2 class="text-2xl font-extrabold mt-16 mb-6 ml-4">
+					<span class="border-b-primary border-b-4">Contacto</span>
+					
+				</h2>
+				<p class="text-sm font-medium md:text-base ml-4 mb-6 max-w-full">
+				Si deseas ponerte en contacto conmigo, no dudes en enviarme un correo
+				electrónico a 
+
 		</section>
 	</body>
 </html>
