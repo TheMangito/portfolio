@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin '@midudev/tailwind-animations';
+
+@layer base {
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
+    input, button, select, textarea, a {
+    font-family: inherit;
+  }
+  }
+
+@theme {
+  --color-primary: #22C9DF;
+  --color-secondary: #1E1E1E;
+  --color-background: #FDFDFD;
+  --color-background-accent: #F2F2F2;
+}

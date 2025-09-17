@@ -1,0 +1,26 @@
+---
+export interface Props {
+  rutaImagen: string;
+  nombreProyecto: string;
+  descripcion?: string;
+  className?: string;
+}
+
+const { rutaImagen, nombreProyecto, descripcion, className = "" } = Astro.props;
+---
+
+<div class={`bg-white rounded-xl p-6 shadow-sm border border-gray-100 transition-all duration-300 h-full flex flex-col items-center justify-center text-center hover:shadow-md hover:scale-x-105 hover:scale-y-105 animate-[scale_1.05] ${className}`}>
+  <div class="flex-1 flex items-center justify-center mb-4">
+    <img 
+      src={rutaImagen} 
+      alt={nombreProyecto}
+      class="max-w-12 max-h-12 object-contain"
+    />
+  </div>
+  <div class="space-y-2">
+    <h3 class="font-semibold text-gray-900 text-sm lg:text-base">{nombreProyecto}</h3>
+    {descripcion && (
+      <p class="text-xs text-gray-600 leading-relaxed">{descripcion}</p>
+    )}
+  </div>
+</div>

@@ -1,5 +1,6 @@
 ---
-
+import "../styles/global.css";
+import GridCard from "../components/GridCard.astro";
 ---
 
 <html lang="en">
@@ -10,7 +11,88 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="mx-auto max-w-4xl container p-4">
+		<main class="flex flex-col items-start justify-center min-h-screen p-4">
+			<h2>Hola👋🏼, soy Jose Ivan</h2>
+			<h1
+				class="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4"
+			>
+				<span class="text-primary">SOFTWARE</span>
+				<br />
+				<span class="text-secondary">DEVELOPER</span>
+			</h1>
+			<p class="text-sm font-medium md:text-base mb-6 max-w-1/2">
+				Desarrollador de software especializado en crear sitios web
+				ultrarrápidos y optimizados para el contenido con Astro.
+			</p>
+		</main>
+		<section class="w-full h-full my-4">
+			<h2 class="text-2xl font-extrabold mt-4 mb-6 mr-4 text-end">
+				<span class="border-b-primary border-b-4">Proyectos</span>
+			</h2>
+
+			<div class="max-w-6xl mx-auto">
+				<div
+					class="grid grid-cols-4 grid-rows-4 gap-4 h-[600px] md:h-[700px] "
+				>
+					<!-- El Colegio Invisible - Grande (2x2) -->
+					<div class="col-span-2 row-span-2 animate-slide-in-left animate-duration-slower view-animate-[--subjectReveal] ">
+						<GridCard
+							rutaImagen="/images/iconos/el-colegio-invisible-logo.jpg"
+							nombreProyecto="El Colegio Invisible"
+							descripcion="Lege et vince"
+							className="bg-gray-100"
+						/>
+					</div>
+
+					<!-- Marketpick - Pequeño (1x1) -->
+					<div class="col-span-1 row-span-1">
+						<GridCard
+							rutaImagen="/images/iconos/logomarketpick.png"
+							nombreProyecto="Marketpick"
+						/>
+					</div>
+
+					<!-- Balanza - Pequeño (1x1) -->
+					<div class="col-span-1 row-span-1 animate-slide-in-right">
+						<GridCard
+							rutaImagen="/images/iconos/logoappabogados.png "
+							nombreProyecto="Justicia"
+						/>
+					</div>
+
+					<!-- Árbol - Mediano (2x1) -->
+					<div class="col-span-2 row-span-1 col-start-3 row-start-2 ">
+						<GridCard
+							rutaImagen="/images/iconos/logoagroscan.png"
+							nombreProyecto="Crecimiento"
+						/>
+					</div>
+					<div class="col-span-3 row-span-1 col-start-1 row-start-3">
+						<GridCard
+							rutaImagen="/images/iconos/"
+							nombreProyecto="Tecnología"
+						/>
+
+					</div>
+
+					<!-- Mundo - Pequeño (1x1) -->
+					<div class="col-span-1 row-span-1 col-start-4 row-start-3 ">
+						<GridCard
+							rutaImagen="/images/iconos/simulacionapp.png"
+							nombreProyecto="Global"
+						/>
+					</div>
+				</div>
+			</div>
+
+			
+
+			<section class="w-full my-4">
+				<h2 class="text-2xl font-extrabold mt-16 mb-6 ml-4">
+					<span class="border-b-primary border-b-4">Sobre Mí</span>
+				</h2>
+			</section>
+		</section>
 	</body>
 </html>
