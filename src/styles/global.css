@@ -13,7 +13,8 @@
 
 @theme {
   --color-primary: #22C9DF;
-  --color-secondary: #1E1E1E;
-  --color-background: #FDFDFD;
-  --color-background-accent: #F2F2F2;
+  --color-secondary: #FDFDFD;
+  --color-background: #131313;
+  --color-background-accent: #292929;
+  --color-background-grid: #1D1D1C;
 }

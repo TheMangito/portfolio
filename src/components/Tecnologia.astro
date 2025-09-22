@@ -1,0 +1,7 @@
+---
+const { nombre, icono } = Astro.props;
+---
+<div class="flex items-center p-2 gap-2 justify-center rounded-lg bg-primary/25 border border-primary">
+    <img src={icono} alt={nombre} class="w-5 h-5 object-contain" />
+    <p class="font-medium text-xs text-secondary">{nombre}</p>
+</div>
