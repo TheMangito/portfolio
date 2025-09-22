@@ -17,7 +17,7 @@ import GridCardMain from "../components/GridCardMain.astro";
 </head>
 <body class="mx-auto max-w-7xl container p-4 bg-background">
     <main
-        class="flex flex-col md:flex-row items-center justify-center min-h-screen view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_10%_contain_25%]"
+        class="flex flex-col md:flex-row items-center justify-center min-h-screen view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_5%_contain_25%]"
     >
         <div class="flex flex-col justify-center h-full max-w-lg text-center md:text-left md:mr-24 lg:mr-32">
             <h2 class="text-2xl font-extrabold mt-4 mb-4 text-secondary">
@@ -42,9 +42,13 @@ import GridCardMain from "../components/GridCardMain.astro";
     </main>
 
     <section
-        class="w-full h-full my-8 view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_1%_contain_10%]"
+        class="w-full h-full my-8"
     >
-        <h2 class="text-5xl font-extrabold my-12 text-center md:text-end">
+        <h2 class="text-5xl font-extrabold my-12 text-center md:text-end
+		animation-duration-500
+				view-animate-[--subjectReveal] 
+           animate-slide-in-right 
+           animate-range-[entry_0%_contain_60%]">
             <span class="border-b-primary border-b-4 text-secondary">Proyectos</span>
         </h2>
 
@@ -52,7 +56,11 @@ import GridCardMain from "../components/GridCardMain.astro";
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
                 
                 <!-- El Colegio Invisible - Grande (2x2)-->
-                <div class="md:col-span-2 lg:col-span-2 lg:row-span-2 animate-slide-in-left animate-duration-slower view-animate-[--subjectReveal]">
+                <div class="md:col-span-2 lg:col-span-2 lg:row-span-2
+				animation-duration-500
+           view-animate-[--subjectReveal] 
+           animate-slide-in-left 
+           animate-range-[entry_40%_contain_60%]">
                     <GridCardMain
                         rutaImagen="/images/iconos/logoelcolegioinvisible.png"
                         nombreProyecto="El Colegio Invisible"
@@ -67,7 +75,11 @@ import GridCardMain from "../components/GridCardMain.astro";
                 </div>
 
                 <!--  Marketpick - Pequeño (1x1) -->
-                <div class="lg:col-span-1 lg:row-span-1">
+                <div class="lg:col-span-1 lg:row-span-1
+				animation-duration-500
+				view-animate-[--subjectReveal] 
+           animate-slide-in-right 
+           animate-range-[entry_40%_contain_60%]">
                     <GridCard
                         rutaImagen="/images/iconos/logomarketpick.png"
                         nombreProyecto="Marketpick"
@@ -80,7 +92,11 @@ import GridCardMain from "../components/GridCardMain.astro";
                 </div>
 
                 <!--  Números PseudoAleatorios - Pequeño (1x1) -->
-                <div class="lg:col-span-1 lg:row-span-1 animate-slide-in-right">
+                <div class="lg:col-span-1 lg:row-span-1
+				animation-duration-500
+				view-animate-[--subjectReveal] 
+           animate-slide-in-right 
+           animate-range-[entry_40%_contain_60%]">
                     <GridCard
                         rutaImagen="/images/iconos/logosimulacion.png"
                         nombreProyecto="Números PseudoAleatorios"
@@ -92,7 +108,11 @@ import GridCardMain from "../components/GridCardMain.astro";
                 </div>
 
                 <!--  Consultas Juridicas - Mediano (2x1) -->
-                <div class="md:col-span-2 lg:col-span-2 lg:row-span-1 lg:col-start-3 lg:row-start-2">
+                <div class="md:col-span-2 lg:col-span-2 lg:row-span-1 lg:col-start-3 lg:row-start-2
+				animation-duration-500
+				view-animate-[--subjectReveal] 
+           animate-slide-in-right 
+           animate-range-[entry_40%_contain_60%]">
                     <GridCardHorizontal
                         rutaImagen="/images/iconos/logoabogados.png"
                         nombreProyecto="Consultas Juridicas"
@@ -105,7 +125,11 @@ import GridCardMain from "../components/GridCardMain.astro";
                 </div>
 
                 <!--  Detección de Plagas AgroScan - Largo (3x1) -->
-                <div class="md:col-span-2 lg:col-span-3 lg:row-span-1 lg:col-start-1 lg:row-start-3">
+                <div class="md:col-span-2 lg:col-span-3 lg:row-span-1 lg:col-start-1 lg:row-start-3
+				animation-duration-500
+				view-animate-[--subjectReveal] 
+           animate-slide-in-left 
+           animate-range-[entry_5%_contain_10%]">
                     <GridHorizontal
                         rutaImagen="/images/iconos/logoagroscan.png"
                         nombreProyecto="Detección de Plagas AgroScan"
@@ -118,7 +142,11 @@ import GridCardMain from "../components/GridCardMain.astro";
                 </div>
 
                 <!--  K-pop Idols - Pequeño (1x1) -->
-                <div class="lg:col-span-1 lg:row-span-1 lg:col-start-4 lg:row-start-3">
+                <div class="lg:col-span-1 lg:row-span-1 lg:col-start-4 lg:row-start-3
+				animation-duration-500
+				view-animate-[--subjectReveal] 
+           animate-slide-in-right 
+           animate-range-[entry_5%_contain_10%]">
                     <GridCard
                         rutaImagen="/images/iconos/logobm.png"
                         nombreProyecto="K-pop Idols"
