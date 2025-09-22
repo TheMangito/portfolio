@@ -7,212 +7,156 @@ import Tecnologia from "../components/Tecnologia.astro";
 import GridCardMain from "../components/GridCardMain.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body class="mx-auto max-w-7xl container p-4 bg-background">
-		<main
-			class="flex items-center  justify-center min-h-screen view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_10%_contain_25%]"
-		>
-			<div class="flex flex-col justify-center h-full max-w-lg md:mr-24 lg:mr-32">
-				<h2
-					class="text-2xl font-extrabold mt-4 mb-4 mr-4 text-start text-secondary"
-				>
-					Hola👋🏼, soy Jose Ivan
-				</h2>
-				<h1
-					class="font-extrabold text-4xl md:text-5xl lg:text-7xl mb-4"
-				>
-					<span class="text-primary">SOFTWARE</span>
-					<br />
-					<span class="text-secondary">DEVELOPER</span>
-				</h1>
-				<p
-					class="text-sm font-medium md:text-base mb-6 max-w-full text-secondary"
-				>
-					Desarrollador de software con experiencia en la construcción
-					de soluciones eficientes y optimizadas, con un enfoque en el
-					rendimiento.
-				</p>
-			</div>
-			<div
-				class="rounded-full overflow-hidden w-96 justify-center items-center hidden md:flex"
-			>
-				<img src="/images/foto-perfil.png" alt="Foto de perfil" />
-			</div>
-		</main>
-		<section
-			class="w-full h-full my-8 view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_1%_contain_10%]"
-		>
-			<h2 class="text-5xl font-extrabold my-12 text-end">
-				<span class="border-b-primary border-b-4 text-secondary"
-					>Proyectos</span
-				>
-			</h2>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portafolio de Jose Ivan</title>
+</head>
+<body class="mx-auto max-w-7xl container p-4 bg-background">
+    <main
+        class="flex flex-col md:flex-row items-center justify-center min-h-screen view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_10%_contain_25%]"
+    >
+        <div class="flex flex-col justify-center h-full max-w-lg text-center md:text-left md:mr-24 lg:mr-32">
+            <h2 class="text-2xl font-extrabold mt-4 mb-4 text-secondary">
+                Hola👋🏼, soy Jose Ivan
+            </h2>
+            <h1 class="font-extrabold text-4xl md:text-5xl lg:text-7xl mb-4">
+                <span class="text-primary">SOFTWARE</span>
+                <br />
+                <span class="text-secondary">DEVELOPER</span>
+            </h1>
+            <p class="text-sm font-medium md:text-base mb-6 max-w-full text-secondary">
+                Desarrollador de software con experiencia en la construcción
+                de soluciones eficientes y optimizadas, con un enfoque en el
+                rendimiento.
+            </p>
+        </div>
+        <div
+            class="rounded-full overflow-hidden w-64 h-64 md:w-96 md:h-96 justify-center items-center flex-shrink-0 mt-8 md:mt-0"
+        >
+            <img src="/images/foto-perfil.png" alt="Foto de perfil" class="w-full h-full object-cover" />
+        </div>
+    </main>
 
-			<div class="max-w-7xl mx-auto">
-				<div
-					class="grid grid-cols-4 grid-rows-4 gap-4 h-[600px] md:h-[950px] w-full"
-				>
-					<!-- El Colegio Invisible - Grande (2x2) -->
-					<div
-						class="col-span-2 row-span-2 animate-slide-in-left animate-duration-slower view-animate-[--subjectReveal]"
-					>
-						<GridCardMain
-							rutaImagen="/images/iconos/logoelcolegioinvisible.png"
-							nombreProyecto="El Colegio Invisible"
-							descripcion="Proyecto realizado para la libreria “El Colegio Invisible” en el cual se realizo una pagina web para gestionar el inventario de sus libros asi como tambien para registrar ventas desde el mismo"
-							isLarge={true}
-						>
-						<div
-								slot="tecnologias"
-								class="flex justify-center gap-2 flex-wrap mt-2"
-							>
-								<Tecnologia
-									nombre="Astro"
-									icono="/images/iconos/iconoAstro.svg"
-								/>
-								<Tecnologia
-									nombre="TypeScript"
-									icono="/images/iconos/iconoTypeScript.svg"
-								/>
-							</div>
-						</GridCardMain>
-					</div>
+    <section
+        class="w-full h-full my-8 view-animate-[--subjectReveal] animate-zoom-in animate-range-[entry_1%_contain_10%]"
+    >
+        <h2 class="text-5xl font-extrabold my-12 text-center md:text-end">
+            <span class="border-b-primary border-b-4 text-secondary">Proyectos</span>
+        </h2>
 
-					<!-- Landing - Pequeño (1x1) -->
-					<div class="col-span-1 row-span-1">
-						<GridCard
-							rutaImagen="/images/iconos/logomarketpick.png"
-							nombreProyecto="Marketpick"
-						>
-							<div
-								slot="tecnologias"
-								class="flex justify-center gap-2 flex-wrap mt-2"
-							>
-								<Tecnologia
-									nombre="Astro"
-									icono="/images/iconos/iconoAstro.svg"
-								/>
-								<Tecnologia
-									nombre="TypeScript"
-									icono="/images/iconos/iconoTypeScript.svg"
-								/>
-							</div>
-						</GridCard>
-					</div>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+                
+                <!-- El Colegio Invisible - Grande (2x2)-->
+                <div class="md:col-span-2 lg:col-span-2 lg:row-span-2 animate-slide-in-left animate-duration-slower view-animate-[--subjectReveal]">
+                    <GridCardMain
+                        rutaImagen="/images/iconos/logoelcolegioinvisible.png"
+                        nombreProyecto="El Colegio Invisible"
+                        descripcion="Proyecto realizado para la libreria “El Colegio Invisible” en el cual se realizo una pagina web para gestionar el inventario de sus libros asi como tambien para registrar ventas desde el mismo"
+                        isLarge={true}
+                    >
+                        <div slot="tecnologias" class="flex justify-center gap-2 flex-wrap mt-2">
+                            <Tecnologia nombre="Astro" icono="/images/iconos/iconoAstro.svg" />
+                            <Tecnologia nombre="TypeScript" icono="/images/iconos/iconoTypeScript.svg" />
+                        </div>
+                    </GridCardMain>
+                </div>
 
-					<!-- Abogados - Pequeño (1x1) -->
-					<div class="col-span-1 row-span-1 animate-slide-in-right">
-						<GridCard
-							rutaImagen="/images/iconos/logosimulacion.png"
-							nombreProyecto="Números PseudoAleatorios"
-						>
-							<div
-								slot="tecnologias"
-								class="flex justify-center gap-2 flex-wrap mt-2"
-							>
-								<Tecnologia
-									nombre="Java"
-									icono="/images/iconos/iconoJava.svg"
-								/>
-							</div>
-						</GridCard>
-					</div>
+                <!--  Marketpick - Pequeño (1x1) -->
+                <div class="lg:col-span-1 lg:row-span-1">
+                    <GridCard
+                        rutaImagen="/images/iconos/logomarketpick.png"
+                        nombreProyecto="Marketpick"
+                    >
+                        <div slot="tecnologias" class="flex justify-center gap-2 flex-wrap mt-2">
+                            <Tecnologia nombre="Astro" icono="/images/iconos/iconoAstro.svg" />
+                            <Tecnologia nombre="TypeScript" icono="/images/iconos/iconoTypeScript.svg" />
+                        </div>
+                    </GridCard>
+                </div>
 
-					<!-- AgroScan - Mediano (2x1) -->
-					<div class="col-span-2 row-span-1 col-start-3 row-start-2">
-						<GridCardHorizontal
-							rutaImagen="/images/iconos/logoabogados.png"
-							nombreProyecto="Consultas Juridicas"
-							descripcion="En este proyecto se utilizaron tecnicas de Web Scrapping para la recolección de datos."
-						>
-							<div
-								slot="tecnologias"
-								class="flex justify-center gap-2 flex-wrap mt-2"
-							>
-								<Tecnologia
-									nombre="Python"
-									icono="/images/iconos/iconoPython.svg"
-								/>
-							</div>
-						</GridCardHorizontal>
-					</div>
+                <!--  Números PseudoAleatorios - Pequeño (1x1) -->
+                <div class="lg:col-span-1 lg:row-span-1 animate-slide-in-right">
+                    <GridCard
+                        rutaImagen="/images/iconos/logosimulacion.png"
+                        nombreProyecto="Números PseudoAleatorios"
+                    >
+                        <div slot="tecnologias" class="flex justify-center gap-2 flex-wrap mt-2">
+                            <Tecnologia nombre="Java" icono="/images/iconos/iconoJava.svg" />
+                        </div>
+                    </GridCard>
+                </div>
 
-					<!-- Marketpick - Pequeño (1x3) -->
-					<div class="col-span-3 row-span-1 col-start-1 row-start-3">
-						<GridHorizontal
-							rutaImagen="/images/iconos/logoagroscan.png"
-							nombreProyecto="Detección de Plagas AgroScan"
-							descripcion="Modelo de Inteligencia Artificial para la detección de plagas en cultivos agrícolas utilizando técnicas de aprendizaje automático."
-						>
-							<div
-								slot="tecnologias"
-								class="flex justify-center gap-2 flex-wrap mt-2"
-							>
-								<Tecnologia
-									nombre="Python"
-									icono="/images/iconos/iconoPython.svg"
-								/>
-							</div>
+                <!--  Consultas Juridicas - Mediano (2x1) -->
+                <div class="md:col-span-2 lg:col-span-2 lg:row-span-1 lg:col-start-3 lg:row-start-2">
+                    <GridCardHorizontal
+                        rutaImagen="/images/iconos/logoabogados.png"
+                        nombreProyecto="Consultas Juridicas"
+                        descripcion="En este proyecto se utilizaron tecnicas de Web Scrapping para la recolección de datos."
+                    >
+                        <div slot="tecnologias" class="flex justify-center gap-2 flex-wrap mt-2">
+                            <Tecnologia nombre="Python" icono="/images/iconos/iconoPython.svg" />
+                        </div>
+                    </GridCardHorizontal>
+                </div>
 
-						</GridHorizontal>
-					</div>
+                <!--  Detección de Plagas AgroScan - Largo (3x1) -->
+                <div class="md:col-span-2 lg:col-span-3 lg:row-span-1 lg:col-start-1 lg:row-start-3">
+                    <GridHorizontal
+                        rutaImagen="/images/iconos/logoagroscan.png"
+                        nombreProyecto="Detección de Plagas AgroScan"
+                        descripcion="Modelo de Inteligencia Artificial para la detección de plagas en cultivos agrícolas utilizando técnicas de aprendizaje automático."
+                    >
+                        <div slot="tecnologias" class="flex justify-center gap-2 flex-wrap mt-2">
+                            <Tecnologia nombre="Python" icono="/images/iconos/iconoPython.svg" />
+                        </div>
+                    </GridHorizontal>
+                </div>
 
-					<!-- Simulacion - Pequeño (1x1) -->
-					<div class="col-span-1 row-span-1 col-start-4 row-start-3">
-						<GridCard
-							rutaImagen="/images/iconos/logobm.png"
-							nombreProyecto="K-pop Idols"
-						>
-							<div
-								slot="tecnologias"
-								class="flex justify-center gap-2 flex-wrap mt-2"
-							>
-								<Tecnologia
-									nombre="HTML"
-									icono="/images/iconos/iconoHTML.svg"
-								/>
-							</div>
-						</GridCard>
-					</div>
-				</div>
-			</div>
+                <!--  K-pop Idols - Pequeño (1x1) -->
+                <div class="lg:col-span-1 lg:row-span-1 lg:col-start-4 lg:row-start-3">
+                    <GridCard
+                        rutaImagen="/images/iconos/logobm.png"
+                        nombreProyecto="K-pop Idols"
+                    >
+                        <div slot="tecnologias" class="flex justify-center gap-2 flex-wrap mt-2">
+                            <Tecnologia nombre="HTML" icono="/images/iconos/iconoHTML.svg" />
+                        </div>
+                    </GridCard>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section
-				class="w-full text-secondary my-4 view-animate-[--subjectReveal] animate-zoom-in animate-range-[0%_contain_5%]"
-			>
-				<h2 class="text-5xl font-extrabold mt-16 mb-6 ml-4">
-					<span class="border-b-primary border-b-4">Sobre Mí</span>
-				</h2>
-				<p
-					class="text-sm font-medium md:text-base ml-4 mb-6 max-w-full"
-				>
-					Soy un apasionado del desarrollo web y siempre estoy
-					buscando aprender nuevas tecnologías y mejorar mis
-					habilidades. Me encanta crear sitios web que no solo sean
-					visualmente atractivos, sino también ultrarrápidos y
-					optimizados.
-				</p>
-			</section>
-			<section
-				class="w-full text-secondary my-4 view-animate-[--subjectReveal] animate-zoom-in animate-range-[0%_contain_5%]"
-			>
-				<h2 class="text-5xl font-extrabold mt-16 mb-6 ml-4 w-full justify-end text-end">
-					<span class="border-b-primary border-b-4">Contacto</span>
-				</h2>
-				<p
-					class="text-sm font-medium md:text-base ml-4 mb-6 max-w-full text-end"
-				>
-					Si deseas ponerte en contacto conmigo, no dudes en enviarme
-					un correo electrónico a
-				</p>
-			</section>
-		</section>
-	</body>
+    <section
+        class="w-full text-secondary my-4 view-animate-[--subjectReveal] animate-zoom-in animate-range-[0%_contain_5%]"
+    >
+        <h2 class="text-5xl font-extrabold mt-16 mb-6 text-center md:text-left md:ml-4">
+            <span class="border-b-primary border-b-4">Sobre Mí</span>
+        </h2>
+        <p class="text-sm font-medium md:text-base md:ml-4 mb-6 max-w-full text-center md:text-left">
+            Soy un apasionado del desarrollo web y siempre estoy
+            buscando aprender nuevas tecnologías y mejorar mis
+            habilidades. Me encanta crear sitios web que no solo sean
+            visualmente atractivos, sino también ultrarrápidos y
+            optimizados.
+        </p>
+    </section>
+
+    <section
+        class="w-full text-secondary my-4 view-animate-[--subjectReveal] animate-zoom-in animate-range-[0%_contain_5%]"
+    >
+        <h2 class="text-5xl font-extrabold mt-16 mb-6 text-center md:text-end md:mr-4">
+            <span class="border-b-primary border-b-4">Contacto</span>
+        </h2>
+        <p class="text-sm font-medium md:text-base md:mr-4 mb-6 max-w-full text-center md:text-end">
+            Si deseas ponerte en contacto conmigo, no dudes en enviarme
+            un correo electrónico.
+        </p>
+    </section>
+</body>
 </html>
